@@ -478,7 +478,7 @@ footer{
 }
 /* media queries */
 
-@media (width < 750px) {
+@media (width < 1000px) {
   nav .checkbox {
     display: block;
   }

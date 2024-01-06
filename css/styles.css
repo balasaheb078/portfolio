@@ -64,6 +64,8 @@ nav {
   left: 0;
   background-color: #f6f1f1;
   z-index: 99;
+  box-shadow: 0px 2px 100px 0px var(--first-color);
+
 
 }
 
@@ -125,7 +127,10 @@ ul li a:hover {
 }
 
 .section {
-  background-color: var(--body-color);
+  /* background-color: var(--body-color); */
+ 
+  background: rgb(230,238,174);
+background: linear-gradient(90deg, rgba(230,238,174,0) 0%, rgba(148,233,176,0.40388655462184875) 100%);
 }
 
 .section__container {
@@ -187,7 +192,7 @@ ul li a:hover {
 }
 
 .hire__me {
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
 
 }
 
@@ -196,13 +201,16 @@ ul li a:hover {
 }
 
 .hire__me:hover {
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 
 }
-
-/* .portfolio {
-  color: var(--primary-color);
-} */
+.portfolio{
+  background-color: #f6f1f1;
+}
+.portfolio a{
+  color: var(--text-light);
+ 
+}
 
 .portfolio:hover {
   background-color: var(--second-color);
@@ -266,17 +274,20 @@ h3 {
 
 /* ----- ABOUT INFO ----- */
 .about-info {
+  
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-block: 30px 70px;
   padding-inline: 20px;
+  margin-left: 10px;
   width: 100%;
   background: var(--color-white);
   box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
   border-radius: 20px;
 }
+
 
 .about-info li,p {
   /* text-align: center; */
@@ -320,7 +331,11 @@ h3 {
   border-radius: 5px;
 }
 
-
+.about-info:hover{
+  scale: 1.02;
+  box-shadow: 1px 8px 10px 2px var(--first-color);
+  
+}
 /* PROJECTS */
 
 .container{
@@ -346,6 +361,10 @@ h3 {
 
 
 }
+ .card:hover{
+  scale: 1.02;
+  box-shadow: 1px 8px 10px 2px var(--first-color);
+ }
 
 
 .img img {
@@ -372,11 +391,11 @@ h3 {
 }
 .button button {
   border: none;
-  background-color: rgb(147, 210, 247);
+  background: var(--first-color);
   border-radius: 10px;
-  padding: 6px 10px;
+  padding: 8px 12px;
   align-items: center;
-  color: blue;
+  /* color: blue; */
   font-size: 10px;
   font-weight: bold;
 
@@ -385,6 +404,7 @@ h3 {
 .button button a {
   text-decoration: none;
   border-color: none;
+  color: var(--color-white);
 
 }
 

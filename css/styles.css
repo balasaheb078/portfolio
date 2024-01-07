@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-*{
+
+* {
   margin: 0;
   padding: 0;
-  
+
 }
+
 :root {
   --primary-color: rgb(30, 159, 171);
   --second-color: rgb(0, 201, 255);
@@ -30,17 +32,19 @@
 a {
   text-decoration: none;
 }
+
 /* ----- SMOOTH SCROLL ----- */
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
+
 /* ---##-- REUSABLE CSS --##--- */
 /* ----- GLOBAL BUTTON DESIGN ----- */
-.btn{
+.btn {
   font-weight: 500;
   padding: 12px 20px;
   background: #efefef;
@@ -49,10 +53,12 @@ body {
   cursor: pointer;
   transition: .4s;
 }
-.btn>i{
+
+.btn>i {
   margin-left: 10px;
 }
-.btn:hover{
+
+.btn:hover {
   background: var(--second-color);
   color: var(--color-white);
 }
@@ -122,15 +128,15 @@ ul li a {
 
 ul li a:hover {
   /* border-top-color: var(--first-color);*/
-  border-bottom-color: var(--first-color); 
+  border-bottom-color: var(--first-color);
   color: var(--first-color);
 }
 
 .section {
   /* background-color: var(--body-color); */
- 
-  background: rgb(230,238,174);
-background: linear-gradient(90deg, rgba(230,238,174,0) 0%, rgba(148,233,176,0.40388655462184875) 100%);
+
+  background: rgb(230, 238, 174);
+  background: linear-gradient(90deg, rgba(230, 238, 174, 0) 0%, rgba(148, 233, 176, 0.40388655462184875) 100%);
 }
 
 .section__container {
@@ -204,12 +210,14 @@ background: linear-gradient(90deg, rgba(230,238,174,0) 0%, rgba(148,233,176,0.40
   background-color: var(--first-color);
 
 }
-.portfolio{
+
+.portfolio {
   background-color: #f6f1f1;
 }
-.portfolio a{
+
+.portfolio a {
   color: var(--text-light);
- 
+
 }
 
 .portfolio:hover {
@@ -274,7 +282,7 @@ h3 {
 
 /* ----- ABOUT INFO ----- */
 .about-info {
-  
+
   position: relative;
   display: flex;
   align-items: center;
@@ -289,8 +297,9 @@ h3 {
 }
 
 
-.about-info li,p {
-  /* text-align: center; */
+.about-info li,
+p {
+
   font-size: 15px;
   color: #777;
 }
@@ -331,28 +340,30 @@ h3 {
   border-radius: 5px;
 }
 
-.about-info:hover{
+.about-info:hover {
   scale: 1.02;
   box-shadow: 1px 8px 10px 2px var(--first-color);
-  
+
 }
+
 /* PROJECTS */
 
-.container{
-  .container{
-      border: 2px solid black;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      gap: 10px;
+.container {
+  .container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
   }
 }
+
 .card {
   margin: auto;
   display: inline-block;
   background-color: white;
   width: 30vw;
-  /* height: 444px; */
+
   padding: 4px 3px;
   padding-bottom: 10px;
   margin: 10px;
@@ -361,10 +372,11 @@ h3 {
 
 
 }
- .card:hover{
+
+.card:hover {
   scale: 1.02;
   box-shadow: 1px 8px 10px 2px var(--first-color);
- }
+}
 
 
 .img img {
@@ -377,18 +389,20 @@ h3 {
 
 
 .content {
-  /* font-family: poppins; */
+
   text-align: center;
   margin: 20px 0px;
-  
+
 }
 
 .button {
   text-align: center;
 }
-.button button:hover{
+
+.button button:hover {
   background-color: rgb(115, 199, 248);
 }
+
 .button button {
   border: none;
   background: var(--first-color);
@@ -409,24 +423,30 @@ h3 {
 }
 
 /* ----- CONTACT FORM ----- */
-.form{
+
+
+
+.form {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
-.form-control{
+
+.form-control {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 80%;
 }
-.form-inputs{
+
+.form-inputs {
   display: flex;
   gap: 10px;
   width: 100%;
 }
-.input-field{
+
+.input-field {
   width: 50%;
   height: 55px;
   background: transparent;
@@ -435,7 +455,10 @@ h3 {
   padding-inline: 20px;
   outline: none;
 }
-textarea{
+
+textarea {
+
+  margin-top: 10px;
   width: 100%;
   height: 250px;
   background: transparent;
@@ -445,23 +468,78 @@ textarea{
   outline: none;
   resize: none;
 }
-.form-button>.btn{
+
+.form-button>.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--second-color);
   color: var(--color-white);
 }
-.form-button>.btn:hover{
+
+.form-button>.btn:hover {
   background: #00B5E7;
 }
-.form-button i{
+
+.form-button i {
   font-size: 18px;
   rotate: -45deg;
 }
 
+/* contact info */
+.contactme{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  
+}
+.email-icon{
+  width: 36px;
+  height: 36px;
+}
+
+.linkedin-icon{
+  width: 30px;
+  height: 30px;
+  
+}
+
+.contact-info-container {
+
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 18%;
+  margin-right: 18%;
+  border: 2px solid var(--text-light);
+  border-radius: 10px;
+  padding: 15px 20px;
+
+
+}
+.contact-info-container span a{
+  text-decoration: none;
+  color: var(--text-light);
+}
+.contact-info-container span a:hover{
+  color: var(--first-color);
+}
+
+
+
+
+
 /* ----- FOOTER BOX ----- */
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,14 +549,15 @@ footer{
   padding-block: 40px 60px;
 }
 
-.bottom-footer{
+.bottom-footer {
   font-size: 14px;
   margin-top: 10px;
   margin-left: 10px;
 }
+
 /* media queries */
 
-@media (width < 1000px) {
+@media (width < 750px) {
   nav .checkbox {
     display: block;
   }
@@ -535,16 +614,10 @@ footer{
   .contact-info {
     width: 80%;
   }
-  /* .project-container{
-    justify-content: center;
-}
-.project-box{
+
+
+  .card {
     width: 80%;
-} */
 
-.card{
-  width: 80%;
-  
+  }
 }
-}
-

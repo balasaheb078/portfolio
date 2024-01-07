@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball</title>
+    <style>
+        .box {
+
+            height: 5vw;
+            width: 5vw;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: animatex 3s linear infinite alternate, animatey 1s ease-out infinite alternate;
+
+
+        }
+
+
+        .container {
+            position: relative;
+            height: 500px;
+            width: 95vw;
+            background-color: blue;
+        }
+
+        @keyframes animatex {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 90vw;
+            }
+
+        }
+
+        @keyframes animatey {
+            from {
+                bottom: 0vw
+            }
+
+            to {
+                bottom: 60%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1>Bouncing-Ball Animation</h1><h4>without considering physics laws</h4></center>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

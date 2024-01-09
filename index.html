@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css" />
   <title>My Portfolio</title>
 </head>
@@ -30,7 +35,7 @@
   </nav>
   <section class="section" id="home">
     <div class="section__container">
-      <div class="contents">
+      <div class="contents" data-aos="fade-down">
         <p class="subtitle">HELLO</p>
         <h1 class="title">
           I'm <span>Balasaheb Hinge<br />a</span> Web Developer
@@ -58,7 +63,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <div class="about-info">
+        <div class="about-info" data-aos="fade-right">
           <h3>My introduction</h3>
           <div class="introduction">
             <li>
@@ -84,8 +89,16 @@
             <button class="btn">Download Resume<i class="uil uil-import"></i></button>
           </div>
         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+          AOS.init({
+            duration: 900,
+          });
+        </script>
+
       </div>
-      <div class="col">
+      <div class="col" data-aos="fade-left">
         <div class="skills-box">
           <div class="skills-header">
             <h3>Frontend</h3>
@@ -131,7 +144,7 @@
 
 
     <div class="container">
-      <div class="card">
+      <div class="card" data-aos="fade-right">
 
         <div class="img">
           <img src="assets/ElderlyCare.png" alt="image not available">
@@ -151,7 +164,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card" data-aos="fade-left">
 
         <div class="img">
           <img src="assets/sgpaCal.png" alt="image not available">
@@ -172,7 +185,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="fade-right">
 
         <div class="img">
           <img src="assets/bouncing-ball.png" alt="image not available">
@@ -181,7 +194,7 @@
         <div class="content">
 
           <h3>Bouncing Ball</h3>
-          <p>Bouncing Ball animation made without care of physics laws</p>
+          <p>Bouncing Ball animation without care of physics laws</p>
 
         </div>
         <div class="button">
@@ -202,31 +215,34 @@
 
     </div>
     <!-- <div class="row"> -->
+    <div class="contact-form" data-aos="zoom-in">
 
-    <div class="form">
-      <div class="col">
-        <div class="form-control">
-          <form action="https://formspree.io/f/mayzzwdj" method="POST" id="contact-form">
-            <div class="form-inputs">
+      <div class="form">
+        <div class="col">
+          <div class="form-control">
+            <form action="https://formspree.io/f/mayzzwdj" method="POST" id="contact-form">
+              <div class="form-inputs">
 
-              <input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
-              <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
+                <input type="text" id="name" name="name" class="input-field" placeholder="Name" required>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Email" required>
 
-            </div>
-            <div class="text-area">
-              <textarea id="message" name="message" placeholder="Message" required></textarea>
-            </div>
-            <div class="form-button">
+              </div>
+              <div class="text-area">
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-button">
 
-              <input class="btn" type="submit" value="Send">
-            </div>
-          </form>
+                <input class="btn" type="submit" value="Send">
+              </div>
+            </form>
+          </div>
+
         </div>
       </div>
 
 
 
-    <!-- </div>
+      <!-- </div>
 
     <div class="contact-info">
       <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
@@ -238,20 +254,27 @@
 
   </section>
 
-  <section class="section contactme">
 
-    <div class="contact-container">
-      <div class="contact-info-container">
+  <section class="section contacts">
+    <div class="contact-info">
+     <center><h2>Find Me <i class="uil uil-corner-right-down"></i></h2></center> </div>
+    <div class="contact-contains">
+      <div class="email">
         <img src="./assets/email.png" alt="Email icon" class="email-icon" />
         <span><a href="mailto:balasahebhinge078@gmail.com">balasahebhinge078@gmail.com</a></span>
       </div>
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="linkedin-icon" />
-        <span><a href="https://www.linkedin.com/in/balasaheb-hinge-5aa29022a/"> LinkedIn</a></span>
+
+      <div class="linkedin">
+        <span><img src="./assets/linkedin.png" alt="LinkedIn icon" class="linkedin-icon " /></span>
+        <span><a href="https://www.linkedin.com/in/balasaheb-hinge-5aa29022a/">LinkedIn</a></span>
       </div>
+
     </div>
 
+    </div>
   </section>
+
+
 
 
   <!-- --------------- FOOTER --------------- -->
@@ -263,16 +286,16 @@
       <li><a href="#">Resume</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
-   
+
 
     </div>
-   
-      
+
+
     <div class="bottom-footer">
 
-      <p>Copyright &copy; <a href="#home" style="text-decoration: none;">2024 Portfolio.</a> - All rights reserved
-      </p>
-      <p><a href="https://www.linkedin.com/in/balasaheb-hinge-5aa29022a/">Designed by Balasaheb Hinge</a></p>
+     <center><p>Copyright &copy; <a href="#home" style="text-decoration: none;">2024 Portfolio.</a> - All rights reserved
+     </p></center> 
+     <center><p>Designed by <a href="https://www.linkedin.com/in/balasaheb-hinge-5aa29022a/">Balasaheb Hinge</a></p></center> 
     </div>
   </footer>
 
